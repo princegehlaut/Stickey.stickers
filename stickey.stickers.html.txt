@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stickey.Stickers | Keyboard Customization</title>
+    <style>
+        :root {
+            --primary: #ff4757;
+            --dark: #2f3542;
+            --light: #f1f2f6;
+        }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background: var(--light); color: var(--dark); }
+        header { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        .logo { font-size: 2.5rem; font-weight: bold; color: var(--primary); }
+        
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-info { padding: 1.5rem; }
+        .price { color: var(--primary); font-weight: bold; font-size: 1.2rem; }
+        
+        .badge { background: #eccc68; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">stickey.stickers</div>
+    <p>Level up your setup with premium keyboard skins</p>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <div class="card-info">
+                <span class="badge">Mechanical</span>
+                <h3>Retro Grey Keycaps</h3>
+                <p>Classic 80s aesthetic for modern switches.</p>
+                <p class="price">$12.99</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <span class="badge">Glow</span>
+                <h3>Neon Cyberpunk</h3>
+                <p>Semi-transparent stickers for RGB backlighting.</p>
+                <p class="price">$15.00</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-info">
+                <span class="badge">Minimalist</span>
+                <h3>Matte Black Stealth</h3>
+                <p>Ultra-thin, non-slip texture for MacBook keys.</p>
+                <p class="price">$10.50</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
